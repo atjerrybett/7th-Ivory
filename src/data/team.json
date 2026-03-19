@@ -1,0 +1,56 @@
+{
+  "members": [
+    {
+      "id": "neha-manoj-shah",
+      "name": "Neha Manoj Shah",
+      "initials": "NS",
+      "role": "Founder, Art Director & Production Designer",
+      "bio": "Neha is the creative force behind 7th Ivory's visual identity. As Art Director and Production Designer, she brings a meticulous eye for detail and a passion for crafting clean, modern, and classy aesthetics. Her work on 'African Space Makers VR' was showcased at the 77th Venice International Film Festival, and her short film 'Love Sweet Sound' won Best Fiction Short Film at the Motion Pictures International Film Festival.",
+      "image": "",
+      "skills": ["Art Direction", "Production Design", "Styling", "Writing", "Directing"],
+      "featured": true,
+      "credits": [
+        { "title": "African Space Makers VR", "role": "Production Designer", "venue": "Venice Film Festival 2020" },
+        { "title": "Love Sweet Sound", "role": "Writer/Director", "venue": "Award-Winning Short Film" },
+        { "title": "Techno Phantom X", "role": "Production Design", "venue": "TVC Campaign" },
+        { "title": "Schweppes Nigeria", "role": "Art Direction", "venue": "TVC Campaign" },
+        { "title": "Rockshore Tropical", "role": "Art Direction", "venue": "EABL Product Photography" }
+      ],
+      "awards": 6
+    },
+    {
+      "id": "ahmed-saleem-deen",
+      "name": "Ahmed Saleem Deen",
+      "initials": "AD",
+      "role": "Director & Editor",
+      "bio": "Ahmed brings stories to life through his dual expertise in directing and editing. His collaborative work on 'Love Sweet Sound' showcases his ability to craft emotionally resonant narratives that challenge perceptions and inspire change. He has edited multiple short films for 7th Ivory including 'Macho Nne' and 'Face Mask for Sale'.",
+      "image": "",
+      "skills": ["Directing", "Editing", "Post-Production", "Color Grading"],
+      "featured": true,
+      "credits": [
+        { "title": "Love Sweet Sound", "role": "Co-Director/Editor", "venue": "Award-Winning Short Film" },
+        { "title": "Macho Nne", "role": "Editor", "venue": "Short Film" },
+        { "title": "Face Mask for Sale", "role": "Editor", "venue": "Short Film" }
+      ],
+      "awards": 2
+    }
+  ],
+  "values": [
+    {
+      "title": "Quality Storytelling",
+      "description": "We believe in stories that matter—narratives that alter perceptions and create lasting change."
+    },
+    {
+      "title": "African Excellence",
+      "description": "Rooted in Kenya, reaching the world. We showcase the best of African creativity on global stages."
+    },
+    {
+      "title": "Innovation",
+      "description": "From traditional film to immersive VR, we embrace new technologies to tell stories in groundbreaking ways."
+    },
+    {
+      "title": "Impact",
+      "description": "Every project we take on has purpose—whether it's empowering communities or elevating brands."
+    }
+  ]
+}

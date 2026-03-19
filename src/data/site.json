@@ -1,0 +1,106 @@
+{
+  "company": {
+    "name": "7th Ivory Productions",
+    "legalName": "Seventh Ivory Productions Limited",
+    "tagline": "We turn African brands into stories the world can't ignore",
+    "description": "Seventh Ivory is a Kenyan-based film production company that creates Films, TVCs and series. We are focused on quality storytelling that alters perceptions and creates change.",
+    "founded": "2020",
+    "location": "Westlands, Nairobi, Kenya",
+    "address": "Westlands, Nairobi, Kenya",
+    "email": "7th.ivory@gmail.com",
+    "phone": "+254 728 729 774",
+    "whatsapp": "+254728729774"
+  },
+  "social": {
+    "instagram": "https://www.instagram.com/7thivory/",
+    "facebook": "https://www.facebook.com/7thivory",
+    "linkedin": "https://www.linkedin.com/company/7th-ivory",
+    "vimeo": "https://vimeo.com/user107357626",
+    "youtube": "https://youtube.com/@7thivory",
+    "behance": "https://www.behance.net/7thivory"
+  },
+  "clients": [
+    {
+      "name": "East African Breweries Limited",
+      "logo": "/images/clients/eabl.svg",
+      "shortName": "EABL"
+    },
+    {
+      "name": "Techno Mobile",
+      "logo": "/images/clients/techno.svg",
+      "shortName": "Techno"
+    },
+    {
+      "name": "Schweppes",
+      "logo": "/images/clients/schweppes.svg",
+      "shortName": "Schweppes"
+    },
+    {
+      "name": "Ogilvy Africa",
+      "logo": "/images/clients/ogilvy.svg",
+      "shortName": "Ogilvy"
+    },
+    {
+      "name": "Dentsu Kenya",
+      "logo": "/images/clients/dentsu.svg",
+      "shortName": "Dentsu"
+    }
+  ],
+  "services": [
+    {
+      "title": "TVC Production",
+      "description": "Full-service television commercial production, from concept to delivery. We create compelling ads that resonate with African and global audiences.",
+      "icon": "film"
+    },
+    {
+      "title": "Branded Content",
+      "description": "Strategic content creation that tells your brand's story authentically, building emotional connections with your audience.",
+      "icon": "sparkles"
+    },
+    {
+      "title": "Short Films",
+      "description": "Award-winning narrative films that tackle important social themes and showcase African storytelling at its finest.",
+      "icon": "clapperboard"
+    },
+    {
+      "title": "VR & 360° Content",
+      "description": "Immersive experiences that transport viewers into new worlds. Venice Film Festival-recognized VR production capabilities.",
+      "icon": "globe"
+    },
+    {
+      "title": "Production Design",
+      "description": "Meticulous art direction and production design that brings visual concepts to life with clean, modern aesthetics.",
+      "icon": "palette"
+    },
+    {
+      "title": "Product Photography",
+      "description": "Premium product photography and styling that makes your products look irresistible and market-ready.",
+      "icon": "camera"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Venice VR Expanded Competition",
+      "event": "77th Venice International Film Festival",
+      "year": "2020",
+      "project": "African Space Makers VR"
+    },
+    {
+      "title": "Best Fiction Short Film",
+      "event": "Motion Pictures International Film Festival",
+      "year": "2020",
+      "project": "Love Sweet Sound"
+    },
+    {
+      "title": "Honourable Mention",
+      "event": "Awareness Festival (Los Angeles)",
+      "year": "2020",
+      "project": "Love Sweet Sound"
+    }
+  ],
+  "seo": {
+    "title": "7th Ivory Productions | Kenyan Film & TVC Production Company",
+    "description": "Award-winning Kenyan production company creating TVCs, short films, and VR content. Venice Film Festival selected. We turn African brands into stories the world can't ignore.",
+    "keywords": ["TVC production Kenya", "African brand storytelling", "Nairobi production company", "Kenya film production", "African commercials", "VR production Africa", "branded content Kenya"]
+  }
+}

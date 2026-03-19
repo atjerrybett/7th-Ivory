@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://7thivory.com/sitemap.xml
