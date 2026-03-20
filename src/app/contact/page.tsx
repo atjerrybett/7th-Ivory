@@ -1,12 +1,15 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, MapPin, Phone, Send, MessageCircle, Download } from "lucide-react";
+import { Mail, MapPin, Phone, Send, MessageCircle, Download, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import siteData from "@/data/site.json";
+
+// Use Formspree endpoint - replace with your actual form ID
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/your-form-id";
 
 export default function ContactPage() {
   const [formState, setFormState] = useState({
@@ -19,16 +22,57 @@ export default function ContactPage() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError("");
     
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    
-    setIsSubmitting(false);
-    setIsSubmitted(true);
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...formState,
+          _subject: `New inquiry from ${formState.name} - ${formState.company || "No company"}`,
+        }),
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+        setFormState({
+          name: "",
+          email: "",
+          company: "",
+          budget: "",
+          deadline: "",
+          message: "",
+        });
+      } else {
+        // Fallback: open email client
+        const mailtoLink = `mailto:${siteData.company.email}?subject=${encodeURIComponent(
+          `Project Inquiry from ${formState.name}`
+        )}&body=${encodeURIComponent(
+          `Name: ${formState.name}\nEmail: ${formState.email}\nCompany: ${formState.company}\nBudget: ${formState.budget}\nDeadline: ${formState.deadline}\n\nMessage:\n${formState.message}`
+        )}`;
+        window.location.href = mailtoLink;
+        setIsSubmitted(true);
+      }
+    } catch {
+      // Fallback: open email client
+      const mailtoLink = `mailto:${siteData.company.email}?subject=${encodeURIComponent(
+        `Project Inquiry from ${formState.name}`
+      )}&body=${encodeURIComponent(
+        `Name: ${formState.name}\nEmail: ${formState.email}\nCompany: ${formState.company}\nBudget: ${formState.budget}\nDeadline: ${formState.deadline}\n\nMessage:\n${formState.message}`
+      )}`;
+      window.location.href = mailtoLink;
+      setIsSubmitted(true);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (

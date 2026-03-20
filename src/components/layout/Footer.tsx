@@ -100,16 +100,29 @@ export function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-8 sm:mt-10 md:mt-12 pt-6 sm:pt-8 border-t border-ivory-800/50 flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4">
-          <p className="text-ivory-500 text-xs sm:text-sm text-center md:text-left">
-            © {new Date().getFullYear()} {siteData.company.legalName}. All rights reserved.
-          </p>
-          <p className="text-ivory-600 text-xs sm:text-sm flex items-center gap-2">
-            <span>Made with</span>
-            <span className="text-terracotta">♥</span>
-            <span>in Kenya</span>
-            <span className="inline-block w-4 h-3 bg-gradient-to-b from-black via-red-600 to-green-600 rounded-sm" />
-          </p>
+        <div className="mt-8 sm:mt-10 md:mt-12 pt-6 sm:pt-8 border-t border-ivory-800/50">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center">
+              <p className="text-ivory-500 text-xs sm:text-sm">
+                © {new Date().getFullYear()} {siteData.company.legalName}. All rights reserved.
+              </p>
+              <div className="flex items-center gap-3 text-xs sm:text-sm">
+                <Link href="/privacy" className="text-ivory-500 hover:text-gold transition-colors">
+                  Privacy Policy
+                </Link>
+                <span className="text-ivory-700">|</span>
+                <Link href="/terms" className="text-ivory-500 hover:text-gold transition-colors">
+                  Terms of Service
+                </Link>
+              </div>
+            </div>
+            <p className="text-ivory-600 text-xs sm:text-sm flex items-center gap-2">
+              <span>Made with</span>
+              <span className="text-terracotta">♥</span>
+              <span>in Kenya</span>
+              <span className="inline-block w-4 h-3 bg-gradient-to-b from-black via-red-600 to-green-600 rounded-sm" />
+            </p>
+          </div>
         </div>
       </div>
     </footer>

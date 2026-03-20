@@ -4,6 +4,9 @@ import { VideoShowreel } from "@/components/home/VideoShowreel";
 import { DirectorProfiles } from "@/components/home/DirectorProfiles";
 import { ServicesSection } from "@/components/home/ServicesSection";
 import { VeniceHighlight } from "@/components/home/VeniceHighlight";
+import { ProcessSection } from "@/components/home/ProcessSection";
+import { Testimonials } from "@/components/home/Testimonials";
+import { PressSection } from "@/components/home/PressSection";
 import { CTASection } from "@/components/home/CTASection";
 
 export default function HomePage() {
@@ -12,9 +15,12 @@ export default function HomePage() {
       <HeroSection />
       <VideoShowreel />
       <FeaturedWork />
+      <ProcessSection />
       <DirectorProfiles />
       <VeniceHighlight />
+      <Testimonials />
       <ServicesSection />
+      <PressSection />
       <CTASection />
     </>
   );
