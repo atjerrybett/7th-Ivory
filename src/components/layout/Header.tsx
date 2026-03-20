@@ -38,11 +38,11 @@ export function Header() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-ivory-950/95 backdrop-blur-md border-b border-ivory-800/50">
+      <header className="fixed top-0 left-0 right-0 z-[100] bg-ivory-950/95 backdrop-blur-md border-b border-ivory-800/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2 group z-50" onClick={() => setIsOpen(false)}>
+            <Link href="/" className="flex items-center gap-2 group" onClick={() => setIsOpen(false)}>
               <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-gold to-gold-dark rounded-lg flex items-center justify-center">
                 <span className="text-ivory-950 font-serif font-bold text-lg md:text-xl">7</span>
               </div>
@@ -82,7 +82,7 @@ export function Header() {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden w-11 h-11 flex items-center justify-center text-ivory-50 hover:text-gold transition-colors z-50 -mr-2"
+              className="md:hidden w-11 h-11 flex items-center justify-center text-ivory-50 hover:text-gold transition-colors -mr-2"
               aria-label={isOpen ? "Close menu" : "Open menu"}
               aria-expanded={isOpen}
             >
@@ -94,8 +94,8 @@ export function Header() {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`md:hidden fixed inset-0 z-40 transition-all duration-300 ease-in-out ${
-          isOpen ? "opacity-100 visible" : "opacity-0 invisible"
+        className={`md:hidden fixed inset-0 top-16 z-[90] transition-all duration-300 ease-in-out ${
+          isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"
         }`}
       >
         {/* Backdrop */}
