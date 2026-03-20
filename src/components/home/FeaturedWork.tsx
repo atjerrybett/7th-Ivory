@@ -43,11 +43,12 @@ export function FeaturedWork() {
             >
               {/* Thumbnail */}
               <div className={`relative ${index === 0 ? "aspect-video sm:aspect-[16/10]" : "aspect-video"}`}>
-                {/* Placeholder gradient as fallback */}
-                <div className="absolute inset-0 bg-gradient-to-br from-ivory-800 to-ivory-900" />
+                {/* Stylized placeholder when no thumbnail */}
+                <div className="absolute inset-0 bg-gradient-to-br from-gold/20 via-ivory-900 to-terracotta/20" />
+                <div className="absolute inset-0 african-pattern opacity-20" />
                 
                 {/* Project Thumbnail */}
-                {project.thumbnail && (
+                {project.thumbnail ? (
                   <Image
                     src={project.thumbnail}
                     alt={project.title}
@@ -55,6 +56,15 @@ export function FeaturedWork() {
                     className="object-cover"
                     sizes={index === 0 ? "(max-width: 640px) 100vw, (max-width: 768px) 100vw, 66vw" : "(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"}
                   />
+                ) : (
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-center">
+                      <div className={`mx-auto mb-2 bg-gold/30 rounded-xl flex items-center justify-center ${index === 0 ? "w-16 h-16 sm:w-20 sm:h-20" : "w-12 h-12 sm:w-14 sm:h-14"}`}>
+                        <span className={`text-gold font-serif font-bold ${index === 0 ? "text-2xl sm:text-3xl" : "text-lg sm:text-xl"}`}>7</span>
+                      </div>
+                      <p className={`text-ivory-400 font-medium ${index === 0 ? "text-sm sm:text-base" : "text-xs sm:text-sm"}`}>{project.category}</p>
+                    </div>
+                  </div>
                 )}
                 
                 {/* Venice Badge for highlighted projects */}

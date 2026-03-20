@@ -1,103 +1,19 @@
 {
   "projects": [
     {
-      "id": "speak-now-vr",
-      "title": "Speak Now VR",
-      "category": "VR/360°",
-      "year": "2025",
-      "client": "Climate Action Kenya",
-      "description": "An immersive VR experience exploring climate change through poetry and spoken word, showcasing Kenya's environmental challenges and the voices fighting for change.",
-      "videoUrl": "https://player.vimeo.com/video/123456789",
-      "thumbnail": "https://images.unsplash.com/photo-1617802690992-15d93263d3a9?w=800&h=450&fit=crop",
-      "tags": ["Climate Change", "Poetry", "Spoken Word", "Kenya", "Immersive"],
-      "credits": {
-        "Director": "Neha Manoj Shah",
-        "Production Company": "7th Ivory Productions",
-        "VR Partner": "Black Rhino VR"
-      },
-      "featured": true,
-      "awards": [],
-      "btsImages": []
-    },
-    {
-      "id": "techno-phantom-x",
-      "title": "Techno Phantom X TVC",
-      "category": "TVC",
-      "year": "2025",
-      "client": "Techno Mobile",
-      "description": "A sleek, modern commercial showcasing the Techno Phantom X smartphone, blending cutting-edge technology with African creativity and style.",
-      "videoUrl": "https://player.vimeo.com/video/123456790",
-      "thumbnail": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&h=450&fit=crop",
-      "tags": ["Mobile", "Technology", "Advertising", "Production Design"],
-      "credits": {
-        "Production Design": "Neha Manoj Shah",
-        "Production Company": "7th Ivory Productions",
-        "Agency": "Dentsu Kenya",
-        "Production Partner": "Giraffe Africa Production"
-      },
-      "featured": true,
-      "awards": [],
-      "btsImages": []
-    },
-    {
-      "id": "schweppes-nigeria",
-      "title": "Schweppes Nigeria TVC",
-      "category": "TVC",
-      "year": "2025",
-      "client": "Schweppes Nigeria",
-      "description": "A refreshing commercial campaign for Schweppes Nigeria, featuring vibrant product styling and art direction that captures the essence of the iconic brand.",
-      "videoUrl": "https://player.vimeo.com/video/123456791",
-      "thumbnail": "https://images.unsplash.com/photo-1527960471264-932f39eb5846?w=800&h=450&fit=crop",
-      "tags": ["Beverages", "Product Styling", "Advertising", "Art Direction"],
-      "credits": {
-        "Art Direction": "Neha Manoj Shah",
-        "Production Company": "7th Ivory Productions",
-        "Agency": "PPM DOC",
-        "Director": "Glen Biderman-Pam",
-        "Production Partner": "Ahoy Films"
-      },
-      "featured": true,
-      "awards": [],
-      "btsImages": []
-    },
-    {
-      "id": "rockshore-tropical",
-      "title": "Rockshore Tropical Beer",
-      "category": "Product Photography",
-      "year": "2025",
-      "client": "East African Breweries Limited (EABL)",
-      "description": "Premium product photography campaign for Rockshore Tropical Beer, showcasing the refreshing beverage with clean, modern, and classy visual direction.",
-      "videoUrl": "",
-      "thumbnail": "https://images.unsplash.com/photo-1535958636474-b021ee887b13?w=800&h=450&fit=crop",
-      "tags": ["Beer", "Product Photography", "Art Direction", "Premium"],
-      "credits": {
-        "Art Direction": "Neha Manoj Shah",
-        "Production Company": "7th Ivory Productions",
-        "Agency": "Ogilvy Africa",
-        "Photography Partner": "Silverbell Africa"
-      },
-      "featured": false,
-      "awards": [],
-      "btsImages": []
-    },
-    {
       "id": "african-space-makers-vr",
       "title": "African Space Makers VR",
       "category": "VR/360°",
-      "year": "2022",
+      "year": "2020",
       "client": "Cultural Video Production Ltd",
-      "description": "A groundbreaking 360° VR documentary exploring urban Africa and the innovative spaces being created by young Africans. Your mission is to discover five creative spaces through the eyes of five unique collectives in Nairobi, one of the most vibrant metropolises of Africa. Selected for Venice VR Expanded Competition at the 77th Venice International Film Festival.",
+      "description": "A groundbreaking 360° VR documentary exploring urban Africa and the innovative spaces being created by young Africans. Selected for Venice VR Expanded Competition at the 77th Venice International Film Festival.",
       "videoUrl": "https://www.youtube.com/watch?v=BO59ArJzRlU",
       "thumbnail": "https://img.youtube.com/vi/BO59ArJzRlU/maxresdefault.jpg",
       "tags": ["360°", "Virtual Reality", "Urban Africa", "Documentary", "Nairobi"],
       "credits": {
         "Production Designer": "Neha Shah, Seventh Ivory Production",
         "Director": "The Nrb Bus Collective",
-        "Production": "The Nrb Bus Collective, Cultural Video, INVR.SPACE, BlackRhino VR",
-        "Screenplay": "Vincenzo Cavallo Faras",
-        "Cinematographer": "Isa Mohamed, Philipp Wenning",
-        "Cast": "Samantha Mugatsia, Kevin Maina, Raymond Ofula, Edward Burugu, Patricia Kihoro, Mugambi Nthiga",
-        "Music": "EA-WAVE"
+        "Production": "The Nrb Bus Collective, Cultural Video, INVR.SPACE, BlackRhino VR"
       },
       "featured": true,
       "awards": [
@@ -106,32 +22,6 @@
         "Berlinale AfricaHub 2020"
       ],
       "highlight": true,
-      "btsImages": []
-    },
-    {
-      "id": "love-sweet-sound",
-      "title": "Love Sweet Sound",
-      "category": "Short Film",
-      "year": "2020",
-      "client": "7th Ivory Productions",
-      "description": "An award-winning short film exploring themes of disability and women empowerment, challenging stereotypes through powerful storytelling rooted in Kenyan culture.",
-      "videoUrl": "https://player.vimeo.com/video/123456793",
-      "thumbnail": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&h=450&fit=crop",
-      "tags": ["Disability", "Women Empowerment", "Social Impact", "Kenyan Film"],
-      "credits": {
-        "Writer/Director": "Neha Manoj Shah",
-        "Co-Director/Editor": "Ahmed Saleem Deen",
-        "Production Company": "7th Ivory Productions"
-      },
-      "featured": true,
-      "awards": [
-        "Best Fiction Short Film – Motion Pictures International Film Festival (Nigeria)",
-        "Honourable Mention – Awareness Festival (Los Angeles)",
-        "Official Selection – Wyoming International Film Festival",
-        "Official Selection – Champion Film Salon International Film Festival",
-        "Official Selection – Hobnobben Film Festival",
-        "Official Selection – Bravemaker Film Fest"
-      ],
       "btsImages": []
     },
     {
@@ -147,7 +37,7 @@
       "credits": {
         "Production Company": "7th Ivory Productions"
       },
-      "featured": false,
+      "featured": true,
       "awards": [],
       "btsImages": []
     },
@@ -163,6 +53,89 @@
       "tags": ["COVID-19", "Social Commentary", "Drama"],
       "credits": {
         "Production Company": "7th Ivory Productions"
+      },
+      "featured": true,
+      "awards": [],
+      "btsImages": []
+    },
+    {
+      "id": "love-sweet-sound",
+      "title": "Love Sweet Sound",
+      "category": "Short Film",
+      "year": "2020",
+      "client": "7th Ivory Productions",
+      "description": "An award-winning short film exploring themes of disability and women empowerment, challenging stereotypes through powerful storytelling rooted in Kenyan culture.",
+      "videoUrl": "https://player.vimeo.com/video/123456793",
+      "thumbnail": "",
+      "tags": ["Disability", "Women Empowerment", "Social Impact", "Kenyan Film"],
+      "credits": {
+        "Writer/Director": "Neha Manoj Shah",
+        "Co-Director/Editor": "Ahmed Saleem Deen",
+        "Production Company": "7th Ivory Productions"
+      },
+      "featured": true,
+      "awards": [
+        "Best Fiction Short Film – Motion Pictures International Film Festival (Nigeria)",
+        "Honourable Mention – Awareness Festival (Los Angeles)"
+      ],
+      "btsImages": []
+    },
+    {
+      "id": "techno-phantom-x",
+      "title": "Techno Phantom X TVC",
+      "category": "TVC",
+      "year": "2025",
+      "client": "Techno Mobile",
+      "description": "A sleek, modern commercial showcasing the Techno Phantom X smartphone, blending cutting-edge technology with African creativity and style.",
+      "videoUrl": "",
+      "thumbnail": "",
+      "tags": ["Mobile", "Technology", "Advertising", "Production Design"],
+      "credits": {
+        "Production Design": "Neha Manoj Shah",
+        "Production Company": "7th Ivory Productions",
+        "Agency": "Dentsu Kenya",
+        "Production Partner": "Giraffe Africa Production"
+      },
+      "featured": false,
+      "awards": [],
+      "btsImages": []
+    },
+    {
+      "id": "schweppes-nigeria",
+      "title": "Schweppes Nigeria TVC",
+      "category": "TVC",
+      "year": "2025",
+      "client": "Schweppes Nigeria",
+      "description": "A refreshing commercial campaign for Schweppes Nigeria, featuring vibrant product styling and art direction that captures the essence of the iconic brand.",
+      "videoUrl": "",
+      "thumbnail": "",
+      "tags": ["Beverages", "Product Styling", "Advertising", "Art Direction"],
+      "credits": {
+        "Art Direction": "Neha Manoj Shah",
+        "Production Company": "7th Ivory Productions",
+        "Agency": "PPM DOC",
+        "Director": "Glen Biderman-Pam",
+        "Production Partner": "Ahoy Films"
+      },
+      "featured": false,
+      "awards": [],
+      "btsImages": []
+    },
+    {
+      "id": "rockshore-tropical",
+      "title": "Rockshore Tropical Beer",
+      "category": "Product Photography",
+      "year": "2025",
+      "client": "East African Breweries Limited (EABL)",
+      "description": "Premium product photography campaign for Rockshore Tropical Beer, showcasing the refreshing beverage with clean, modern, and classy visual direction.",
+      "videoUrl": "",
+      "thumbnail": "",
+      "tags": ["Beer", "Product Photography", "Art Direction", "Premium"],
+      "credits": {
+        "Art Direction": "Neha Manoj Shah",
+        "Production Company": "7th Ivory Productions",
+        "Agency": "Ogilvy Africa",
+        "Photography Partner": "Silverbell Africa"
       },
       "featured": false,
       "awards": [],
