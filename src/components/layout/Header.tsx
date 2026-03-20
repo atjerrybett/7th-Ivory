@@ -38,7 +38,10 @@ export function Header() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-[100] bg-ivory-950/95 backdrop-blur-md border-b border-ivory-800/50">
+      {/* Header Bar - Always visible */}
+      <header className={`fixed top-0 left-0 right-0 z-[100] transition-colors duration-300 ${
+        isOpen ? "bg-ivory-950" : "bg-ivory-950/95 backdrop-blur-md border-b border-ivory-800/50"
+      }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
@@ -46,7 +49,7 @@ export function Header() {
               <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-gold to-gold-dark rounded-lg flex items-center justify-center">
                 <span className="text-ivory-950 font-serif font-bold text-lg md:text-xl">7</span>
               </div>
-              <div className="hidden sm:block">
+              <div className={`hidden sm:block ${isOpen ? "sm:hidden" : ""}`}>
                 <span className="text-ivory-50 font-semibold text-lg tracking-tight">
                   7th Ivory
                 </span>
@@ -92,33 +95,29 @@ export function Header() {
         </div>
       </header>
 
-      {/* Mobile Menu Overlay */}
+      {/* Full-Screen Mobile Menu Overlay */}
       <div
-        className={`md:hidden fixed inset-0 top-16 z-[90] transition-all duration-300 ease-in-out ${
-          isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"
+        className={`md:hidden fixed inset-0 z-[99] bg-ivory-950 transition-all duration-300 ease-out ${
+          isOpen 
+            ? "opacity-100 visible" 
+            : "opacity-0 invisible pointer-events-none"
         }`}
+        style={{ paddingTop: "64px" }} // Height of header (h-16 = 64px)
       >
-        {/* Backdrop */}
-        <div 
-          className="absolute inset-0 bg-ivory-950/98"
-          onClick={() => setIsOpen(false)}
-        />
-        
         {/* Menu Content */}
-        <nav 
-          className={`relative h-full flex flex-col items-center justify-center px-6 transition-transform duration-300 ${
-            isOpen ? "translate-y-0" : "-translate-y-4"
-          }`}
-        >
-          <div className="flex flex-col items-center gap-4">
+        <nav className="h-full flex flex-col items-center justify-center px-6">
+          <div className="flex flex-col items-center gap-2">
             {navLinks.map((link, index) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="text-3xl sm:text-4xl text-ivory-100 hover:text-gold active:text-gold transition-colors font-serif py-3 px-6"
+                className={`text-4xl text-ivory-100 hover:text-gold active:text-gold transition-all font-serif py-4 px-6 transform ${
+                  isOpen ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
+                }`}
                 style={{ 
-                  transitionDelay: isOpen ? `${index * 50}ms` : "0ms",
+                  transitionDelay: isOpen ? `${100 + index * 75}ms` : "0ms",
+                  transitionDuration: "400ms",
                 }}
               >
                 {link.label}
@@ -126,7 +125,12 @@ export function Header() {
             ))}
           </div>
           
-          <div className="mt-10 w-full max-w-[280px]">
+          <div 
+            className={`mt-12 w-full max-w-[300px] transform transition-all duration-500 ${
+              isOpen ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
+            }`}
+            style={{ transitionDelay: isOpen ? "400ms" : "0ms" }}
+          >
             <Button
               asChild
               size="lg"
@@ -138,14 +142,27 @@ export function Header() {
             </Button>
           </div>
 
-          {/* Decorative element */}
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2">
-            {[...Array(3)].map((_, i) => (
-              <div key={i} className="w-2 h-2 rounded-full bg-gold/30" />
-            ))}
+          {/* Social/Contact hint */}
+          <div 
+            className={`absolute bottom-10 left-0 right-0 text-center transition-all duration-500 ${
+              isOpen ? "opacity-100" : "opacity-0"
+            }`}
+            style={{ transitionDelay: isOpen ? "500ms" : "0ms" }}
+          >
+            <p className="text-ivory-600 text-sm">Nairobi, Kenya</p>
+            <div className="flex justify-center gap-1 mt-3">
+              {[...Array(5)].map((_, i) => (
+                <div 
+                  key={i} 
+                  className="w-1.5 h-1.5 rounded-full bg-gold"
+                  style={{ opacity: 1 - i * 0.15 }}
+                />
+              ))}
+            </div>
           </div>
         </nav>
       </div>
     </>
   );
+}
 }
