@@ -49,11 +49,11 @@ export function Header() {
               <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-gold to-gold-dark rounded-lg flex items-center justify-center">
                 <span className="text-ivory-950 font-serif font-bold text-lg md:text-xl">7</span>
               </div>
-              <div className={`hidden sm:block ${isOpen ? "sm:hidden" : ""}`}>
-                <span className="text-ivory-50 font-semibold text-lg tracking-tight">
+              <div>
+                <span className="text-ivory-50 font-semibold text-base sm:text-lg tracking-tight">
                   7th Ivory
                 </span>
-                <span className="block text-ivory-500 text-xs tracking-widest uppercase">
+                <span className="block text-ivory-500 text-[10px] sm:text-xs tracking-widest uppercase">
                   Productions
                 </span>
               </div>
