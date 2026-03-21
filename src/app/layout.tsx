@@ -119,6 +119,7 @@ export default function RootLayout({
       </head>
       <body
         className={`${inter.variable} ${playfair.variable} font-sans antialiased bg-ivory-950 text-ivory-50`}
+        suppressHydrationWarning
       >
         {/* Google Analytics */}
         <Script

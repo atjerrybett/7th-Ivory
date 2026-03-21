@@ -161,15 +161,17 @@ export default function ContactPage() {
                 </a>
               </div>
 
-              {/* Pitch Deck Download (placeholder) */}
+              {/* Pitch Deck Download */}
               <div className="pt-4 sm:pt-6 border-t border-ivory-800/50">
-                <button
+                <a
+                  href="/pitch-deck.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 sm:gap-3 w-full p-3 sm:p-4 bg-ivory-900/50 hover:bg-ivory-800/50 rounded-lg sm:rounded-xl text-ivory-200 font-semibold transition-colors border border-ivory-800/50 text-sm sm:text-base min-h-[44px]"
-                  onClick={() => alert("Pitch deck download will be available soon!")}
                 >
                   <Download className="h-5 w-5 sm:h-6 sm:w-6 text-gold" />
-                  Download Our Pitch Deck
-                </button>
+                  View Pitch Deck
+                </a>
               </div>
             </div>
           </div>

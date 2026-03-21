@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>7th Ivory Productions — Pitch Deck</title>
+    <style>
+      :root {
+        --ivory-950: #0d0d0d;
+        --ivory-900: #141414;
+        --ivory-800: #1f1f1f;
+        --ivory-400: #a1a1aa;
+        --ivory-200: #e4e4e7;
+        --gold: #d4af37;
+        --terracotta: #cd853f;
+        --forest: #228b22;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Inter", system-ui, -apple-system, sans-serif;
+        background: var(--ivory-950);
+        color: var(--ivory-200);
+        line-height: 1.6;
+      }
+      .deck {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 40px 24px 80px;
+      }
+      .topbar {
+        height: 6px;
+        background: linear-gradient(90deg, var(--gold), var(--terracotta), var(--forest));
+        border-radius: 999px;
+        margin-bottom: 32px;
+      }
+      .hero {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 28px;
+        align-items: center;
+        padding: 32px;
+        background: linear-gradient(135deg, #101010 0%, #141414 60%, #101010 100%);
+        border: 1px solid #222;
+        border-radius: 20px;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+      .logo-mark {
+        width: 72px;
+        height: 72px;
+        border-radius: 16px;
+        background: linear-gradient(135deg, var(--gold) 0%, #b8860b 100%);
+        color: #0d0d0d;
+        display: grid;
+        place-items: center;
+        font-weight: 800;
+        font-size: 36px;
+        font-family: "Playfair Display", serif;
+      }
+      h1, h2, h3 { margin: 0 0 12px; }
+      h1 { font-size: 36px; font-family: "Playfair Display", serif; }
+      h2 { font-size: 24px; color: var(--gold); font-weight: 700; }
+      h3 { font-size: 18px; color: var(--ivory-200); }
+      .tagline { color: var(--gold); font-weight: 600; }
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 12px;
+        border: 1px solid rgba(212,175,55,.35);
+        border-radius: 999px;
+        background: rgba(212,175,55,.08);
+        color: var(--gold);
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .section { margin-top: 32px; }
+      .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+      .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+      .card {
+        background: var(--ivory-900);
+        border: 1px solid #222;
+        border-radius: 16px;
+        padding: 16px;
+      }
+      .muted { color: var(--ivory-400); }
+      ul { margin: 8px 0 0; padding-left: 18px; }
+      .kpi { display: flex; gap: 12px; flex-wrap: wrap; }
+      .kpi .card { flex: 1 1 220px; }
+      .divider { height: 1px; background: #222; margin: 24px 0; }
+      .footer {
+        margin-top: 40px;
+        padding: 24px;
+        border: 1px solid #222;
+        border-radius: 16px;
+        background: var(--ivory-900);
+      }
+      .cta {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 16px;
+        border-radius: 10px;
+        background: var(--gold);
+        color: #0d0d0d;
+        text-decoration: none;
+        font-weight: 700;
+      }
+      @media (max-width: 900px) {
+        .hero { grid-template-columns: 1fr; }
+        .grid-2 { grid-template-columns: 1fr; }
+        .grid-3 { grid-template-columns: 1fr; }
+      }
+      @media print {
+        body { background: white; color: #111; }
+        .card, .hero, .footer { border-color: #ddd; }
+        .topbar { height: 4px; }
+        .cta { display: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="deck">
+      <div class="topbar"></div>
+
+      <section class="hero">
+        <div>
+          <div class="logo">
+            <div class="logo-mark">7</div>
+            <div>
+              <h1>7th Ivory Productions</h1>
+              <div class="muted">Seventh Ivory Productions Limited • Nairobi, Kenya</div>
+            </div>
+          </div>
+          <p class="tagline">We turn African brands into stories the world can't ignore.</p>
+          <p class="muted">
+            Award‑winning Kenyan film production company creating TVCs, short films, and immersive VR/360° content.
+          </p>
+          <span class="pill">Venice Film Festival Selected</span>
+        </div>
+        <div class="card">
+          <h3>Company Snapshot</h3>
+          <ul>
+            <li>Founded: 2020</li>
+            <li>Location: Westlands, Nairobi</li>
+            <li>Focus: Storytelling, brand content, VR/360°</li>
+            <li>Awards: Venice VR Expanded, MPIFF, Awareness Festival</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Services</h2>
+        <div class="grid-3">
+          <div class="card"><h3>TVC Production</h3><p class="muted">Concept‑to‑delivery commercials that resonate locally and globally.</p></div>
+          <div class="card"><h3>Branded Content</h3><p class="muted">Strategic, authentic storytelling that builds emotional connection.</p></div>
+          <div class="card"><h3>Short Films</h3><p class="muted">Award‑winning narratives that shift perceptions and create change.</p></div>
+          <div class="card"><h3>VR & 360°</h3><p class="muted">Immersive experiences recognized by Venice Film Festival.</p></div>
+          <div class="card"><h3>Production Design</h3><p class="muted">Art direction with clean, modern, premium aesthetics.</p></div>
+          <div class="card"><h3>Product Photography</h3><p class="muted">Market‑ready product visuals with high‑end styling.</p></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Featured Work</h2>
+        <div class="grid-2">
+          <div class="card">
+            <h3>African Space Makers VR</h3>
+            <p class="muted">Venice VR Expanded Competition (2020) • Cultural Video Production</p>
+          </div>
+          <div class="card">
+            <h3>Love Sweet Sound</h3>
+            <p class="muted">Best Fiction Short Film (MPIFF) • Honourable Mention (Awareness Festival)</p>
+          </div>
+          <div class="card">
+            <h3>Macho Nne</h3>
+            <p class="muted">Short Film • 7th Ivory Productions</p>
+          </div>
+          <div class="card">
+            <h3>Face Mask for Sale</h3>
+            <p class="muted">Short Film • 7th Ivory Productions</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Awards & Recognition</h2>
+        <div class="grid-3">
+          <div class="card"><h3>Venice VR Expanded</h3><p class="muted">77th Venice International Film Festival • 2020</p></div>
+          <div class="card"><h3>Best Fiction Short Film</h3><p class="muted">Motion Pictures International Film Festival • 2020</p></div>
+          <div class="card"><h3>Honourable Mention</h3><p class="muted">Awareness Festival (Los Angeles) • 2020</p></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Clients</h2>
+        <div class="kpi">
+          <div class="card"><strong>EABL</strong><div class="muted">East African Breweries Limited</div></div>
+          <div class="card"><strong>Techno</strong><div class="muted">Techno Mobile</div></div>
+          <div class="card"><strong>Schweppes</strong><div class="muted">Schweppes</div></div>
+          <div class="card"><strong>Ogilvy</strong><div class="muted">Ogilvy Africa</div></div>
+          <div class="card"><strong>Dentsu</strong><div class="muted">Dentsu Kenya</div></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Team</h2>
+        <div class="grid-2">
+          <div class="card">
+            <h3>Neha Manoj Shah</h3>
+            <p class="muted">Founder, Art Director & Production Designer</p>
+            <p class="muted">Venice Film Festival selection • MPIFF Best Fiction Short Film</p>
+          </div>
+          <div class="card">
+            <h3>Ahmed Saleem Deen</h3>
+            <p class="muted">Director & Editor</p>
+            <p class="muted">Co‑Director/Editor on Love Sweet Sound, Editor on Macho Nne</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Contact</h2>
+        <div class="footer">
+          <div><strong>Email:</strong> 7th.ivory@gmail.com</div>
+          <div><strong>Phone:</strong> +254 728 729 774</div>
+          <div><strong>WhatsApp:</strong> 254792002633</div>
+          <div><strong>Location:</strong> Westlands, Nairobi, Kenya</div>
+          <a class="cta" href="mailto:7th.ivory@gmail.com">Request a Quote</a>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+      <div class="muted">Tip: Use your browser’s Print → Save as PDF to export.</div>
+    </div>
+  </body>
+</html>
